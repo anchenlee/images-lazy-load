@@ -1,14 +1,15 @@
 {
-  "name": "image-lazy-load",
-  "version": "0.1.0",
-  "private": true,
+  "name": "images-lazy-load",
+  "version": "0.1.2",
+  "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve ./src/example/index.js",
+    "build": "vue-cli-service build --target lib --name imageLazyLoad ./src/main.js",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/imageLazyLoad.umd.min.js",
   "dependencies": {
     "core-js": "^3.4.3",
     "vue": "^2.6.10"
